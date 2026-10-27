@@ -7,6 +7,10 @@ DATA = Path(__file__).parent / 'data' / 'thefts.csv'
 
 @app.route('/')
 def index():
+    return render_template('home.html')
+
+@app.route('/map')
+def map_apge():
     return render_template('index.html')
 
 @app.route('/api/incidents')
