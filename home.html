@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset = "UTF-8">
+        <title>福井県自転車盗難情報</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: system-ui, sans-serif;
+                background: green;
+            }
+
+            header {
+                color: white;
+                background: #1d2939;
+                padding: 20px 7%;
+                font-weight: bold;
+            }
+            
+            main {
+                max-width: 780px;
+                margin: 12vh auto;
+                padding: 35px 24px;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: clamp(28px, 5vw, 44px);
+            }
+
+            p {
+                line-height: 1.9;
+                color: #4b5563
+            }
+
+            .button {
+                display:inline-blcok;
+                margin-top:25px;
+                padding:16px 36px;
+                background: #1674c3;
+                color: white;
+                text-decoration: none;
+                border-radius:12px;
+                font-synthesis-weight: bold;
+            }
+
+            .button:hover {
+                background: #0c5d9e;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            福井県自転車盗難情報
+        </header>
+        <main>
+            <h1>自転車盗難マップ</h1>
+
+            <p>
+                福井県内の自転車情報を地図で確認できます。
+            <br>
+            市区町村や施錠状況を絞り込むことができます。
+            </p>
+
+            <a class=""button"href="{{url_for('map_page')}}">
+                マップを見る
+            </a>
+        </main>
+    </body>
+</html>
